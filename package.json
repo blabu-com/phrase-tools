@@ -1,5 +1,5 @@
 {
-  "name": "@blabu/phrase-tools",
+  "name": "@blabu.com/phrase-tools",
   "version": "0.1.0",
   "description": "Script for Phrase translation service",
   "main": "./lib/Push.js",
@@ -11,6 +11,7 @@
     "create": "npm run build && npm run local",
     "build": "rm -rf ./lib && tsc",
     "local": "sudo npm i -g",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "keywords": [
@@ -53,5 +54,8 @@
     "tslint": "^6.1.3",
     "tslint-config-standard-plus": "^2.3.0",
     "typescript": "^4.1.2"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
